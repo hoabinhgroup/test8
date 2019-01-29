@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)https://www.luckydraw.live/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">[uib-typeahead-popup].dropdown-menu{display:block;}</style><style type="text/css">.uib-time input{width:50px;}</style><style type="text/css">[uib-tooltip-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-bottom > .tooltip-arrow,[uib-popover-popup].popover.top-left > .arrow,[uib-popover-popup].popover.top-right > .arrow,[uib-popover-popup].popover.bottom-left > .arrow,[uib-popover-popup].popover.bottom-right > .arrow,[uib-popover-popup].popover.left-top > .arrow,[uib-popover-popup].popover.left-bottom > .arrow,[uib-popover-popup].popover.right-top > .arrow,[uib-popover-popup].popover.right-bottom > .arrow,[uib-popover-html-popup].popover.top-left > .arrow,[uib-popover-html-popup].popover.top-right > .arrow,[uib-popover-html-popup].popover.bottom-left > .arrow,[uib-popover-html-popup].popover.bottom-right > .arrow,[uib-popover-html-popup].popover.left-top > .arrow,[uib-popover-html-popup].popover.left-bottom > .arrow,[uib-popover-html-popup].popover.right-top > .arrow,[uib-popover-html-popup].popover.right-bottom > .arrow,[uib-popover-template-popup].popover.top-left > .arrow,[uib-popover-template-popup].popover.top-right > .arrow,[uib-popover-template-popup].popover.bottom-left > .arrow,[uib-popover-template-popup].popover.bottom-right > .arrow,[uib-popover-template-popup].popover.left-top > .arrow,[uib-popover-template-popup].popover.left-bottom > .arrow,[uib-popover-template-popup].popover.right-top > .arrow,[uib-popover-template-popup].popover.right-bottom > .arrow{top:auto;bottom:auto;left:auto;right:auto;margin:0;}[uib-popover-popup].popover,[uib-popover-html-popup].popover,[uib-popover-template-popup].popover{display:block !important;}</style><style type="text/css">.uib-datepicker-popup.dropdown-menu{display:block;float:none;margin:0;}.uib-button-bar{padding:10px 9px 2px;}</style><style type="text/css">.uib-position-measure{display:block !important;visibility:hidden !important;position:absolute !important;top:-9999px !important;left:-9999px !important;}.uib-position-scrollbar-measure{position:absolute !important;top:-9999px !important;width:50px !important;height:50px !important;overflow:scroll !important;}.uib-position-body-scrollbar-measure{overflow:scroll !important;}</style><style type="text/css">.uib-datepicker .uib-title{width:100%;}.uib-day button,.uib-month button,.uib-year button{min-width:100%;}.uib-left,.uib-right{width:100%}</style><style type="text/css">.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+  <!--<base href="/">--><base href=".">
+  
+  
+  <title>Lucky Draw</title>
+  <meta name="author" content="luckydraw.live">
+  <meta name="robots" content="index follow">
+  <meta name="googlebot" content="index follow">
+  <meta name="keywords" content="lucky draw, random name picker, random number generator">
+  <meta name="description" content="World&#39;s most sophisticated random number generator.">
+
+  
+  <meta property="og:title" content="Lucky Draw">
+  <meta property="og:site_name" content="LuckyDraw.live">
+  <meta property="og:url" content="https://www.luckydraw.live">
+  <meta property="og:description" content="World&#39;s most sophisticated random number generator.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.luckydraw.live/images/luckydraw-v1.png">
+
+  <meta name="viewport" content="width=1280, initial-scale=1.0" id="viewportMeta">
+  <link rel="shortcut icon" type="image/x-icon" href="https://www.luckydraw.live/favicon.ico">
+
+  <style>
+    .loader-block {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      z-index: 999999;
+      position: fixed;
+      text-align: center;
+      background-color: #ffffff;
+      background-image: url(images/loader.svg);
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  </style>
+  
+
+  
+</head>
+
+<body ng-app="app" ng-class="&#39;theme-&#39; + theme" class="ng-scope theme-orange" cz-shortcut-listen="true">
+  
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWZ9HX7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+
+  <div class="loader-block" id="loader" style="display: none;"></div>
+  <link rel="stylesheet" href="./css/vendor-f1143d218a.css">
+
+  <link rel="stylesheet" href="./css/app-0316cbad9f.css">
+  <div class="wrapper" ng-style="{&#39;background-image&#39;: url_background}">
+    <!-- uiView: --><ui-view class="ng-scope"><id-lucky-draw data="$ctrl.data" setting="$ctrl.setting" results="$ctrl.results" is-limited="$ctrl.isLimited(r)" class="ng-scope ng-isolate-scope"><header class="header">
+  <div class="container-fluid">
+    <div class="row">
+      
+      <div class="logo-zone">
+        <!-- ngIf: $ctrl.setting.info.logo -->
+      </div>
+      
+
+      <div class="col-xs-12">
+        
+        <h1>
+          <!-- ngIf: $ctrl.appState.name !== 'presentation' --><span class="event-name ng-binding ng-scope" ng-if="$ctrl.appState.name !== &#39;presentation&#39;">
+            Lucky Draw Software
+          </span><!-- end ngIf: $ctrl.appState.name !== 'presentation' -->
+          <!-- ngIf: $ctrl.appState.name === 'presentation' && $ctrl.setting.info.name -->
+				</h1>
+        
+
+        <div class="header-content">
+          
+          <!-- ngIf: $ctrl.setting.info.company -->
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div ng-class="$ctrl.appState.name === &#39;presentation&#39; ? &#39;main-padding&#39; : &#39;main&#39;" class="main">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+        <section class="section section-prize">
+          <header class="section-head" ng-class="$ctrl.animClass.setprize" ng-init="$ctrl.setPrize(0)">
+            
+            <div class="coin">
+              <!-- ngRepeat: prize in $ctrl.prizes --><img class="prize-image ng-scope" ng-repeat="prize in $ctrl.prizes" ng-src="/images/temp/bronze-prize.svg" ng-show="$ctrl.prizeIndex == $index &amp;&amp; prize.showimage" src="./Lucky Draw_files/bronze-prize.svg"><!-- end ngRepeat: prize in $ctrl.prizes --><img class="prize-image ng-scope ng-hide" ng-repeat="prize in $ctrl.prizes" ng-src="/images/temp/silver-prize.svg" ng-show="$ctrl.prizeIndex == $index &amp;&amp; prize.showimage" src="./Lucky Draw_files/silver-prize.svg"><!-- end ngRepeat: prize in $ctrl.prizes --><img class="prize-image ng-scope ng-hide" ng-repeat="prize in $ctrl.prizes" ng-src="/images/temp/gold-prize.svg" ng-show="$ctrl.prizeIndex == $index &amp;&amp; prize.showimage" src="./Lucky Draw_files/gold-prize.svg"><!-- end ngRepeat: prize in $ctrl.prizes --><img class="prize-image ng-scope ng-hide" ng-repeat="prize in $ctrl.prizes" ng-src="/images/temp/diamond-prize.svg" ng-show="$ctrl.prizeIndex == $index &amp;&amp; prize.showimage" src="./Lucky Draw_files/diamond-prize.svg"><!-- end ngRepeat: prize in $ctrl.prizes --><img class="prize-image ng-scope ng-hide" ng-repeat="prize in $ctrl.prizes" ng-src="/images/temp/x-prize.svg" ng-show="$ctrl.prizeIndex == $index &amp;&amp; prize.showimage" src="./Lucky Draw_files/x-prize.svg"><!-- end ngRepeat: prize in $ctrl.prizes -->
+            </div>
+            
+          </header>
+
+          
+          <div class="section-message">
+            <h2 ng-style="$ctrl.ux.style($ctrl.setting.colors.action_msg, 1)" ng-class="$ctrl.animClass.message" ng-switch="" on="$ctrl.state">
+              <!-- ngSwitchWhen: ready --><span ng-switch-when="ready" class="state-ready ng-binding ng-scope" style="">Press the Spin button to start</span><!-- end ngSwitchWhen: -->
+              <!-- ngSwitchWhen: spin -->
+              <!-- ngSwitchWhen: reveal -->
+              <!-- ngSwitchWhen: complete|toconfirm|confirmed|cancel -->
+            </h2>
+          </div>
+          
+
+          <div class="section-body" ng-class="$ctrl.animClass.setprize">
+            <div class="section-body-inner section-body-inner-primary">
+              <ul class="slots">
+                
+                <!-- ngRepeat: n in $ctrl.machineSlots --><li class="slot ng-scope slot-1of6 state-ready" ng-repeat="n in $ctrl.machineSlots" ng-class="&#39;slot-1of&#39;+$ctrl.slotsCss + &#39; state-&#39;+$ctrl.state" style="">
+                  <!-- ngRepeat: i in $ctrl.characters[n] -->
+                  
+                  <!-- ngIf: !$ctrl.characters[n] --><div class="slot-item ng-scope" ng-if="!$ctrl.characters[n]">
+                    <div class="slot-number">
+                      <span ng-class="$ctrl.state !== &#39;ready&#39; ? &#39;not-available&#39; : &#39;available&#39;" class="available" style=""><img ng-src="/images/temp/bronze-prize.svg" src="./Lucky Draw_files/bronze-prize.svg"></span>
+                    </div>
+                  </div><!-- end ngIf: !$ctrl.characters[n] -->
+                  
+                </li><!-- end ngRepeat: n in $ctrl.machineSlots --><li class="slot ng-scope slot-1of6 state-ready" ng-repeat="n in $ctrl.machineSlots" ng-class="&#39;slot-1of&#39;+$ctrl.slotsCss + &#39; state-&#39;+$ctrl.state">
+                  <!-- ngRepeat: i in $ctrl.characters[n] -->
+                  
+                  <!-- ngIf: !$ctrl.characters[n] --><div class="slot-item ng-scope" ng-if="!$ctrl.characters[n]">
+                    <div class="slot-number">
+                      <span ng-class="$ctrl.state !== &#39;ready&#39; ? &#39;not-available&#39; : &#39;available&#39;" class="available" style=""><img ng-src="/images/temp/bronze-prize.svg" src="./Lucky Draw_files/bronze-prize.svg"></span>
+                    </div>
+                  </div><!-- end ngIf: !$ctrl.characters[n] -->
+                  
+                </li><!-- end ngRepeat: n in $ctrl.machineSlots --><li class="slot ng-scope slot-1of6 state-ready" ng-repeat="n in $ctrl.machineSlots" ng-class="&#39;slot-1of&#39;+$ctrl.slotsCss + &#39; state-&#39;+$ctrl.state">
+                  <!-- ngRepeat: i in $ctrl.characters[n] -->
+                  
+                  <!-- ngIf: !$ctrl.characters[n] --><div class="slot-item ng-scope" ng-if="!$ctrl.characters[n]">
+                    <div class="slot-number">
+                      <span ng-class="$ctrl.state !== &#39;ready&#39; ? &#39;not-available&#39; : &#39;available&#39;" class="available" style=""><img ng-src="/images/temp/bronze-prize.svg" src="./Lucky Draw_files/bronze-prize.svg"></span>
+                    </div>
+                  </div><!-- end ngIf: !$ctrl.characters[n] -->
+                  
+                </li><!-- end ngRepeat: n in $ctrl.machineSlots --><li class="slot ng-scope slot-1of6 state-ready" ng-repeat="n in $ctrl.machineSlots" ng-class="&#39;slot-1of&#39;+$ctrl.slotsCss + &#39; state-&#39;+$ctrl.state">
+                  <!-- ngRepeat: i in $ctrl.characters[n] -->
+                  
+                  <!-- ngIf: !$ctrl.characters[n] --><div class="slot-item ng-scope" ng-if="!$ctrl.characters[n]">
+                    <div class="slot-number">
+                      <span ng-class="$ctrl.state !== &#39;ready&#39; ? &#39;not-available&#39; : &#39;available&#39;" class="available" style=""><img ng-src="/images/temp/bronze-prize.svg" src="./Lucky Draw_files/bronze-prize.svg"></span>
+                    </div>
+                  </div><!-- end ngIf: !$ctrl.characters[n] -->
+                  
+                </li><!-- end ngRepeat: n in $ctrl.machineSlots --><li class="slot ng-scope slot-1of6 state-ready" ng-repeat="n in $ctrl.machineSlots" ng-class="&#39;slot-1of&#39;+$ctrl.slotsCss + &#39; state-&#39;+$ctrl.state">
+                  <!-- ngRepeat: i in $ctrl.characters[n] -->
+                  
+                  <!-- ngIf: !$ctrl.characters[n] --><div class="slot-item ng-scope" ng-if="!$ctrl.characters[n]">
+                    <div class="slot-number">
+                      <span ng-class="$ctrl.state !== &#39;ready&#39; ? &#39;not-available&#39; : &#39;available&#39;" class="available" style=""><img ng-src="/images/temp/bronze-prize.svg" src="./Lucky Draw_files/bronze-prize.svg"></span>
+                    </div>
+                  </div><!-- end ngIf: !$ctrl.characters[n] -->
+                  
+                </li><!-- end ngRepeat: n in $ctrl.machineSlots --><li class="slot ng-scope slot-1of6 state-ready" ng-repeat="n in $ctrl.machineSlots" ng-class="&#39;slot-1of&#39;+$ctrl.slotsCss + &#39; state-&#39;+$ctrl.state">
+                  <!-- ngRepeat: i in $ctrl.characters[n] -->
+                  
+                  <!-- ngIf: !$ctrl.characters[n] --><div class="slot-item ng-scope" ng-if="!$ctrl.characters[n]">
+                    <div class="slot-number">
+                      <span ng-class="$ctrl.state !== &#39;ready&#39; ? &#39;not-available&#39; : &#39;available&#39;" class="available" style=""><img ng-src="/images/temp/bronze-prize.svg" src="./Lucky Draw_files/bronze-prize.svg"></span>
+                    </div>
+                  </div><!-- end ngIf: !$ctrl.characters[n] -->
+                  
+                </li><!-- end ngRepeat: n in $ctrl.machineSlots -->
+                
+              </ul>
+            </div>
+          </div>
+
+          <div class="section-actions">
+            <div class="section-head-actions">
+              
+              <a class="link-prev not-available" ng-mouseover="$ctrl.ux.mOver(&#39;prevnext&#39;)" ng-mouseleave="$ctrl.ux.mLeave(&#39;prevnext&#39;)" ng-class="$ctrl.state !== &#39;ready&#39; || $ctrl.prizeIndex &lt;= 0 ? &#39;not-available&#39; : &#39;available&#39;" ng-click="$ctrl.setPrize($ctrl.prizeIndex - 1)">
+                <!-- ngIf: $ctrl.ux.hint.prevnext -->
+                <i class="ion-chevron-left"></i>
+              </a>
+              
+  
+              
+              <span class="prize-text ng-binding">
+                Bronze Prize
+              </span>
+              
+  
+              
+              <span class="prize-text prize-count ion-person-add ng-binding ng-hide" ng-class="$ctrl.animClass.prizecount" ng-show="$ctrl.prizes[$ctrl.prizeIndex].confirmed">
+                0
+              </span>
+              
+  
+              
+              <a class="link-next available" ng-mouseover="$ctrl.ux.mOver(&#39;prevnext&#39;)" ng-mouseleave="$ctrl.ux.mLeave(&#39;prevnext&#39;)" ng-class="$ctrl.state !== &#39;ready&#39; || $ctrl.prizeIndex &gt;= $ctrl.prizes.length - 1 ? &#39;not-available&#39; : &#39;available&#39;" ng-click="$ctrl.setPrize($ctrl.prizeIndex + 1)" style="">
+                <i class="ion-chevron-right"></i>
+                <!-- ngIf: $ctrl.ux.hint.prevnext -->
+              </a>
+              
+            </div>
+
+            <div ng-switch="" on="$ctrl.state" class="section-button">
+              <!-- ngSwitchWhen: ready --><div ng-switch-when="ready" class="state-ready ng-scope" style="">
+                <a class="btn btn-yellow btn-yellow-secondary ng-binding" ng-click="$ctrl.spin()" ng-mouseover="$ctrl.ux.mOver(&#39;spin&#39;)" ng-mouseleave="$ctrl.ux.mLeave(&#39;spin&#39;)">
+                  <!-- ngIf: $ctrl.ux.hint.spin -->
+                  Spin
+                </a>
+                <!-- ngIf: $ctrl.appState.name !== 'customize' && $ctrl.appState.name !== 'presentation' --><span ng-if="$ctrl.appState.name !== &#39;customize&#39; &amp;&amp; $ctrl.appState.name !== &#39;presentation&#39;" class="ng-scope">
+                  <!-- ngIf: $ctrl.user.authenticated --><a ng-if="$ctrl.user.authenticated" ui-sref="customize" ng-click="$ctrl.analytics.log(&#39;ui_action&#39;, &#39;Execute&#39;, &#39;Button - Customize&#39;)" class="btn btn-primary ng-scope" href="https://www.luckydraw.live/customize">
+                    <translate class="ng-scope">Customize</translate>
+                  </a><!-- end ngIf: $ctrl.user.authenticated -->
+                  <!-- ngIf: !$ctrl.user.authenticated -->
+                </span><!-- end ngIf: $ctrl.appState.name !== 'customize' && $ctrl.appState.name !== 'presentation' -->
+              </div><!-- end ngSwitchWhen: -->
+
+              <!-- ngSwitchWhen: spin -->
+
+              <!-- ngSwitchWhen: complete -->
+            </div> 
+
+          </div> 
+        </section>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<app-footer light-off="$ctrl.lightOff" class="ng-isolate-scope"><footer class="footer">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+        <nav class="footer-nav light-on" ng-class="$ctrl.lightOff ? &#39;light-off&#39; : &#39;light-on&#39;">
+          <ul>
+            <!-- ngIf: $ctrl.appState.name !== 'presentation' --><li ng-if="$ctrl.appState.name !== &#39;presentation&#39;" class="ng-scope">
+              <a ng-click="$ctrl.modals.open(&#39;IdResult&#39;)" ng-mouseover="$ctrl.ux.mOver(&#39;IdResult&#39;)" ng-mouseleave="$ctrl.ux.mLeave(&#39;IdResult&#39;)">
+                <!-- ngIf: $ctrl.ux.hint.IdResult -->
+                <i class="ion-android-funnel"></i>
+                <translate class="ng-scope">Result</translate>
+              </a>
+            </li><!-- end ngIf: $ctrl.appState.name !== 'presentation' -->
+
+            <!-- ngIf: $ctrl.appState.name !== 'presentation' --><li ng-if="$ctrl.appState.name !== &#39;presentation&#39;" class="ng-scope">
+              <a ng-click="$ctrl.modals.open(&#39;Intro&#39;)">
+                <i class="ion-android-list"></i>
+                <translate class="ng-scope">How-to</translate>
+              </a>
+            </li><!-- end ngIf: $ctrl.appState.name !== 'presentation' -->
+
+            <!-- ngIf: $ctrl.appState.name !== 'presentation' --><li ng-if="$ctrl.appState.name !== &#39;presentation&#39;" class="ng-scope">
+              <a ng-click="$ctrl.modals.open(&#39;Payment&#39;)">
+                <i class="ion-pricetag"></i>
+                <translate class="ng-scope">Pricing</translate>
+              </a>
+            </li><!-- end ngIf: $ctrl.appState.name !== 'presentation' -->
+
+            <!-- ngIf: $ctrl.appState.name === 'presentation' -->
+
+            <!-- ngIf: $ctrl.appState.name !== 'presentation' --><li ng-if="$ctrl.appState.name !== &#39;presentation&#39;" class="ng-scope">
+              <!-- ngIf: !$ctrl.user.authenticated -->
+              <!-- ngIf: $ctrl.user.authenticated --><a ng-click="$ctrl.modals.open(&#39;Account&#39;)" ng-if="$ctrl.user.authenticated" class="ng-scope" style="">
+                <i class="ion-person"></i>
+                <translate class="ng-scope">Account</translate>
+              </a><!-- end ngIf: $ctrl.user.authenticated -->
+            </li><!-- end ngIf: $ctrl.appState.name !== 'presentation' -->
+
+            <!-- ngIf: $ctrl.appState.name !== 'presentation' && $ctrl.user.authenticated --><li ng-if="$ctrl.appState.name !== &#39;presentation&#39; &amp;&amp; $ctrl.user.authenticated" class="ng-scope" style="">
+              <a ng-click="$ctrl.analytics.log(&#39;logout&#39;);$ctrl.user.logout();">
+                <i class="ion-android-exit"></i>
+                <translate class="ng-scope">Logout</translate>
+              </a>
+            </li><!-- end ngIf: $ctrl.appState.name !== 'presentation' && $ctrl.user.authenticated -->
+          </ul>
+        </nav>
+        
+
+        <!-- ngIf: $ctrl.appState.name !== 'presentation' --><ul class="list-actions ng-scope" ng-if="$ctrl.appState.name !== &#39;presentation&#39;">
+          <li>
+            <a ng-click="$ctrl.modals.open(&#39;Background&#39;)" ng-class="$ctrl.ux.cssIntro.infobackground">
+              <i class="ion-image"></i>
+            </a>
+          </li>
+          <li>
+            <a ng-click="$ctrl.modals.open(&#39;Theme&#39;)" ng-class="$ctrl.ux.cssIntro.runtimetheme">
+              <i class="ion-android-color-palette"></i>
+            </a>
+          </li>
+          <li>
+            <a ng-click="$ctrl.modals.open(&#39;Language&#39;)">
+              <i class="ion-android-globe"></i>
+            </a>
+          </li>
+          <li>
+            <a ng-click="$ctrl.modals.open(&#39;Contact&#39;)">
+              <i class="ion-email"></i>
+            </a>
+          </li>
+          <li>
+            <a ng-click="$ctrl.audio.controller.toggle()" ng-mouseover="$ctrl.ux.mOver(&#39;audio&#39;)" ng-mouseleave="$ctrl.ux.mLeave(&#39;audio&#39;)">
+              <i ng-class="$ctrl.audio.controller.icon" class="ion-ios-musical-notes"></i>
+              <!-- ngIf: $ctrl.ux.hint.audio -->
+            </a>
+          </li>
+        </ul><!-- end ngIf: $ctrl.appState.name !== 'presentation' -->
+      </div>
+      
+    </div>
+    
+  </div>
+</footer>
+
+</app-footer>
+
+<hot-keys enter="$ctrl.startstop()" nextstep="" confirm="$ctrl.save()" cancel="$ctrl.retry()" prev="$ctrl.setPrevPrize()" next="$ctrl.setNextPrize()" class="ng-isolate-scope">
+</hot-keys>
+</id-lucky-draw>
+</ui-view>
+    <notification class="ng-isolate-scope"></notification>
+    <img width="1" height="1" appbackground="" ng-src="">
+  </div>
+
+  <script src="./js/vendor-76e7b0367a.js"></script>
+
+  <script src="./js/app-287a065b4e.js"></script>
+
+
+
+<div class="cfp-hotkeys-container fade ng-scope" ng-class="{in: helpVisible}" style="display: none;"><div class="cfp-hotkeys"><!-- ngIf: !header --><h4 class="cfp-hotkeys-title ng-binding ng-scope" ng-if="!header">Keyboard Shortcuts:</h4><!-- end ngIf: !header --><!-- ngIf: header --><table><tbody><!-- ngRepeat: hotkey in hotkeys | filter:{ description: '!$$undefined$$' } --><tr ng-repeat="hotkey in hotkeys | filter:{ description: &#39;!$$undefined$$&#39; }" class="ng-scope"><td class="cfp-hotkeys-keys"><!-- ngRepeat: key in hotkey.format() track by $index --><span ng-repeat="key in hotkey.format() track by $index" class="cfp-hotkeys-key ng-binding ng-scope">?</span><!-- end ngRepeat: key in hotkey.format() track by $index --></td><td class="cfp-hotkeys-text ng-binding">Show / hide this help menu</td></tr><!-- end ngRepeat: hotkey in hotkeys | filter:{ description: '!$$undefined$$' } --></tbody></table><!-- ngIf: footer --><div class="cfp-hotkeys-close" ng-click="toggleCheatSheet()">×</div></div></div>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1701423146839861");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1701423146839861&amp;ev=PageView&amp;noscript=1"></noscript>
+
+<script type="text/javascript" id="">(function(e,a){if(!a.__SV){var b=window;try{var n,k,l=b.location,g=l.hash;var c=function(a,b){return(n=a.match(RegExp(b+"\x3d([^\x26]*)")))?n[1]:null};g&&c(g,"state")&&(k=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===k.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(k.desiredHash||"",e.title,l.pathname+l.search)))}catch(p){}var m,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};m="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(h=0;h<m.length;h++)e(d,m[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+mixpanel.init("1c54a33d9d8c8ee50166501274e6bce6");</script><script type="text/javascript" id="">window.onerror=function(a,b,c,d,e){window.mixpanel&&window.mixpanel.track&&window.mixpanel.track("JS Error",{message:a,source:b,lineno:c,colno:d,error:(e||"").toString()});return!0};</script><script src="chrome-extension://gppongmhjkpfnbhagpmjfkannfbllamg/js/inject.js"></script></body></html>

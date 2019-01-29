@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>test | index.html</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+
+	<!-- css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" />
+	<link href="/css/jquery.slotmachine.min.css" rel="stylesheet">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+ 
+   
+    <script src="/js/slotmachine.min.js"></script>
+    <script src="/js/jquery.slotmachine.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+<style>
+	#textMachine {
+  width:520px;
+  height: 67px;
+  overflow: hidden;
+  display: inline-block;
+  text-align: left;
+}
+</style>
+	<header id="site-header">
+	</header><!-- #site-header -->
+
+	<main id="site-content" role="main">
+		<div id="casino" style="padding-top:50px;">
+      <div class="content">
+        <h1>Use the API</h1>
+
+        <div>
+          <div id="casino1" class="slotMachine" style="margin-left: -65px;">
+	         <div class="slot slot0">0</div>
+            <div class="slot slot1">1</div>
+            <div class="slot slot2">2</div>
+            <div class="slot slot3">3</div>
+            <div class="slot slot4">4</div>
+            <div class="slot slot5">5</div>
+            <div class="slot slot6">6</div>
+            <div class="slot slot7">7</div>
+            <div class="slot slot8">8</div>
+            <div class="slot slot9">9</div>
+          </div>
+
+          <div id="casino2" class="slotMachine">
+	        <div class="slot slot0">0</div>
+            <div class="slot slot1">1</div>
+            <div class="slot slot2">2</div>
+            <div class="slot slot3">3</div>
+            <div class="slot slot4">4</div>
+            <div class="slot slot5">5</div>
+            <div class="slot slot6">6</div>
+             <div class="slot slot7">7</div>
+            <div class="slot slot8">8</div>
+            <div class="slot slot9">9</div>
+          </div>
+
+          <div id="casino3" class="slotMachine">
+	        <div class="slot slot0">0</div>
+            <div class="slot slot1">1</div>
+            <div class="slot slot2">2</div>
+            <div class="slot slot3">3</div>
+            <div class="slot slot4">4</div>
+            <div class="slot slot5">5</div>
+            <div class="slot slot6">6</div>
+             <div class="slot slot7">7</div>
+            <div class="slot slot8">8</div>
+            <div class="slot slot9">9</div>
+          </div>
+          
+          <div id="casino4" class="slotMachine">
+	         <div class="slot slot0">0</div>	
+            <div class="slot slot1">1</div>
+            <div class="slot slot2">2</div>
+            <div class="slot slot3">3</div>
+            <div class="slot slot4">4</div>
+            <div class="slot slot5">5</div>
+            <div class="slot slot6">6</div>
+             <div class="slot slot7">7</div>
+            <div class="slot slot8">8</div>
+            <div class="slot slot9">9</div>
+          </div>
+
+          <div class="btn-group btn-group-justified" role="group">
+            <button id="casinoShuffle" type="button" class="btn btn-primary btn-lg">Shuffle!</button>
+            <button id="casinoStop" type="button" class="btn btn-primary btn-lg">Stop!</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-10 col-md-5 offset-sm-1 offset-md-1">
+            <pre><code id="codeBlock5"></code></pre>
+          </div>
+
+          <div class="col-sm-10 col-md-5 offset-sm-1 offset-md-0">
+            <pre><code id="codeBlock6"></code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+	</main><!-- #site-content -->
+
+	<footer id="site-footer" role="contentinfo">
+	</footer><!-- #site-footer -->
+
+	<!-- js -->
+
+
+ <script>
+	 	   function shuffle(array) {
+    var i = array.length,
+        j = 0,
+        temp;
+
+    while (i--) {
+
+        j = Math.floor(Math.random() * (i+1));
+
+        temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+
+    }
+
+    return array;
+} 
+
+  function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+   }
+
+const btnShuffle = document.querySelector('#casinoShuffle');
+const btnStop = document.querySelector('#casinoStop');
+var mCasino1,mCasino2,mCasino3,mCasino4;
+ var slots = [...Array(221).keys()];
+	var random; 
+	var slotRandom;
+
+function getRandom(){
+	const randomSelected = getRandomInt(1,222);
+	 if(randomSelected.toString().length == 2){
+			slotRandom = '0' + randomSelected;
+		 }else if(randomSelected.toString().length == 1){
+			slotRandom = '00' + randomSelected; 
+		 }else{
+			slotRandom = randomSelected;
+		 }
+		 
+	console.log(slotRandom);
+	console.log(slotRandom.toString().charAt(0));
+	console.log(slotRandom.toString().charAt(1));
+	console.log(slotRandom.toString().charAt(2));
+	return slotRandom;
+}
+ 
+let count = 0;
+
+const casino1 = document.querySelector('#casino1');
+const casino2 = document.querySelector('#casino2');
+const casino3 = document.querySelector('#casino3');
+const casino4 = document.querySelector('#casino4');
+mCasino1 = new SlotMachine(casino1, {
+  active: 0,
+  delay: 1100,
+  randomize() {
+		return this.active;
+  		}
+});
+mCasino2 = new SlotMachine(casino2, {
+  active: 0,
+  delay: 800,
+  randomize() {
+	  //  let random =  getRandom();
+		return slotRandom.toString().charAt(0);
+  	}
+});
+mCasino3 = new SlotMachine(casino3, {
+  active: 0,
+  delay: 800,
+  randomize() {
+		//let random =  getRandom();
+		return slotRandom.toString().charAt(1);
+  	}
+});
+mCasino4 = new SlotMachine(casino4, {
+  active: 0,
+  delay: 600,
+  randomize() {
+		//let random =  getRandom();
+		return slotRandom.toString().charAt(2);
+  	}
+});
+	
+
+//getCasino(slotRandom);
+    </script>
+    <script>
+btnShuffle.addEventListener('click', () => {
+	 //   var random = getRandomInt(1,222);
+	//getCasino();
+	const randomSelected = getRandomInt(1,222);
+	 if(randomSelected.toString().length == 2){
+			slotRandom = '0' + randomSelected;
+		 }else if(randomSelected.toString().length == 1){
+			slotRandom = '00' + randomSelected; 
+		 }else{
+			slotRandom = randomSelected;
+		 }
+		
+  count = 4;
+
+  mCasino1.shuffle(9999);
+  mCasino2.shuffle(9999);
+  mCasino3.shuffle(9999);
+  mCasino4.shuffle(9999);
+ 
+});
+
+
+
+
+btnStop.addEventListener('click', () => {
+  switch(count) {	
+    case 4:
+      mCasino1.stop();
+      mCasino4.stop();
+      break;
+    case 3:
+      mCasino2.stop();
+      break;
+    case 2:
+     console.log(slotRandom);
+      mCasino3.stop();
+      break;
+     case 1:
+    
+      break;  
+    
+    
+  }
+  count--;
+
+});
+
+
+    </script>
+</body>
+</html>
